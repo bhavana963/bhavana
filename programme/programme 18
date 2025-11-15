@@ -13,4 +13,9 @@ public:
 class Manager : public Employee, public Salary {
 public:
  void show(){ cout << "Name: " << name << ", Salary: " << sal << endl; }
+};
+int main() {
+ Manager m;
+ m.getName(); m.getSal(); m.show();
+ return 0;
 }
